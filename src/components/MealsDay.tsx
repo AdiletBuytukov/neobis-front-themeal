@@ -28,8 +28,7 @@ const MealsDay: React.FC = () => {
                     <h2>Meal of the Day</h2>
                     <Link to={`/meal/${meal.idMeal}`}><h3>{meal.strMeal}</h3></Link>
                     <div className='meals-category'>
-                        <p>{meal.strCategory} | </p>
-                        <p>{meal.strArea}</p>
+                        <p>{meal.strCategory} | {meal.strArea}</p>
                     </div>
                 </div>
                 <div className='meals-img'>
