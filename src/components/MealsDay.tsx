@@ -23,15 +23,20 @@ const MealsDay: React.FC = () => {
 
     return (
         <>
-            <div>
-                <h2>Meal of the Day</h2>
-                <Link to={`/meal/${meal.idMeal}`}><h3>{meal.strMeal}</h3></Link>
-                <div>
-                    <p>{meal.strCategory}</p>
-                    <p>{meal.strArea}</p>
+            <div className='meals-block'>
+                <div className='meals-title'>
+                    <h2>Meal of the Day</h2>
+                    <Link to={`/meal/${meal.idMeal}`}><h3>{meal.strMeal}</h3></Link>
+                    <div className='meals-category'>
+                        <p>{meal.strCategory} | </p>
+                        <p>{meal.strArea}</p>
+                    </div>
                 </div>
-                <img src={meal.strMealThumb} alt={meal.strMeal}/>
+                <div className='meals-img'>
+                    <img src={meal.strMealThumb} alt={meal.strMeal}/>
+                </div>
             </div>
+
         </>
     );
 };

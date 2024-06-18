@@ -16,3 +16,43 @@
     text-decoration: none;
     color: white;
 }
+
+.meals-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.meals-title h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.meals-title a {
+    color: #d49726;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 58px;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.meals-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.meals-img img{
+    border-radius: 8px;
+    box-shadow: 10px 12px 29px -14px rgba(0, 0, 0, .75);
+    object-fit: cover;
+    width: 75%;
+}
